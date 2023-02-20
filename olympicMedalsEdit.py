@@ -30,7 +30,7 @@ OLYMPICS GAMES ANALYSIS SYSTEM
         elif ch==4:
             ex=input("Are you sure you want to exit?(y/n)")
             if ex=='y' or ex=='Y':
-                print(" Exiting now............Done! \nHave A Nice Day!!")
+                print("Exiting now............Done! \nHave A Nice Day!!")
                 sys.exit()
         else:
             print("\nInvalid Input Try again")
@@ -43,16 +43,16 @@ def datavisual():
 
 DATA VISUALISATION OF TOP 10 COUNTRIES
 
-1- Line Chart~> COUNTRIES VS TOTAL MEDALS
-2- Line Chart~> COUNTRIES VS TOTAL NO. OF TIMES PARTICIPATED (IN SUMMER & WINTER)
-3- Bar Chart ~> COUNTRIES VS TOTAL NO. OF GOLD MEDALS
-4- Bar Chart ~> COUNTRIES VS TOTAL NO. OF SILVER MEDALS
-5- Bar Chart ~> COUNTRIES VS TOTAL NO. OF BRONZE MEDALS.
-6- Bar Chart ~> COUNTRIES VS TOTAL NO. OF MEDALS (IN SUMMER AND WINTER)
+1- Line Chart-> COUNTRIES VS TOTAL MEDALS
+2- Line Chart-> COUNTRIES VS TOTAL NO. OF TIMES PARTICIPATED (IN SUMMER & WINTER)
+3- Bar Chart -> COUNTRIES VS TOTAL NO. OF GOLD MEDALS
+4- Bar Chart -> COUNTRIES VS TOTAL NO. OF SILVER MEDALS
+5- Bar Chart -> COUNTRIES VS TOTAL NO. OF BRONZE MEDALS.
+6- Bar Chart -> COUNTRIES VS TOTAL NO. OF MEDALS (IN SUMMER AND WINTER)
 7- Exit to Main Menu
 
 ''')
-        ans=input("Please enter your choice:")
+        ans=input("Please enter your choice: ")
         if ans=='1':
             line_chart1(df1)
         elif ans=='2':
