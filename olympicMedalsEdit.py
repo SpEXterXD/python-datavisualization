@@ -29,7 +29,7 @@ OLYMPICS GAMES ANALYSIS SYSTEM
         elif ch==4:
             ex=input("Are you sure you want to exit?(y/n)")
             if ex=='y' or ex=='Y':
-                print("Exiting now............Done! \nHave A Nice Day!!")
+                print("Exiting now ! \nHave A Nice Day!!")
                 sys.exit()
         else:
             print("\nInvalid Input Try again")
@@ -42,8 +42,8 @@ def datavisual():
 
 DATA VISUALISATION OF TOP 10 COUNTRIES
 
-1- Line Chart-> COUNTRIES VS TOTAL MEDALS
-2- Line Chart-> COUNTRIES VS TOTAL NO. OF TIMES PARTICIPATED (IN SUMMER & WINTER)
+1- Line Chart -> COUNTRIES VS TOTAL MEDALS
+2- Line Chart -> COUNTRIES VS TOTAL NO. OF TIMES PARTICIPATED (IN SUMMER & WINTER)
 3- Bar Chart -> COUNTRIES VS TOTAL NO. OF GOLD MEDALS
 4- Bar Chart -> COUNTRIES VS TOTAL NO. OF SILVER MEDALS
 5- Bar Chart -> COUNTRIES VS TOTAL NO. OF BRONZE MEDALS.
@@ -70,7 +70,7 @@ DATA VISUALISATION OF TOP 10 COUNTRIES
             print("\nInvalid choice.Try again")
 
 
-#TO PLOT LINE CHART--> TOP 10 COUNTRIES VS TOTAL MEDALS
+#TO PLOT LINE CHART-> TOP 10 COUNTRIES VS TOTAL MEDALS
 def line_chart1(df1):
     df=df1.sort_values('TotalMedal', ascending=False)
     df=df.loc[:,['Country','TotalMedal']]
@@ -87,7 +87,7 @@ def line_chart1(df1):
     
 
     
-#TO PLOT LINE CHART --> TOP 10 COUNTRIES VS TOTAL NO. OF TIMES PARTICIPATED (IN SUMMER & WINTER)
+#TO PLOT LINE CHART -> TOP 10 COUNTRIES VS TOTAL NO. OF TIMES PARTICIPATED (IN SUMMER & WINTER)
 def line_chart2(df1):
 
     df=df1.sort_values('TotalTimesPart', ascending=False)
@@ -107,7 +107,7 @@ def line_chart2(df1):
     plt.show()
 
 
-#TO PLOT BAR CHART-->TOP 10 COUNTRIES VS TOTAL NO, OF GOLD MEDALS
+#TO PLOT BAR CHART->TOP 10 COUNTRIES VS TOTAL NO, OF GOLD MEDALS
 def bar_chart1(df1):
     
     df=df1.sort_values('Tgoldmedal',ascending=False)
@@ -125,7 +125,7 @@ def bar_chart1(df1):
     plt.show()
 
 
-#TO PLOT BAR CHART-->TOP 10 COUNTRIES VS TOTAL NO. OF SILVER MEDALS
+#TO PLOT BAR CHART->TOP 10 COUNTRIES VS TOTAL NO. OF SILVER MEDALS
 def bar_chart2(df1):
     
     df=df1.sort_values('Tsilvermedal',ascending=False)
@@ -136,14 +136,14 @@ def bar_chart2(df1):
     plt.bar(x,totalsilver,width=.6, label='Total No. of Silver Medals by Top 10 Countries',color='silver')
     plt.xticks(x,Countries,rotation=30)
     plt.title('Olympics Silver Medal Analysis of Top 10 Countries',color='blue',fontsize=16)
-    plt.xlabel(' Countries ~ ~ ~~ ~ >',fontsize=12,color='red')
-    plt.ylabel('No. of Silver Medals ~~~~~>',fontsize=12,color='red')
+    plt.xlabel(' Countries ->',fontsize=12,color='red')
+    plt.ylabel('No. of Silver Medals ->',fontsize=12,color='red')
     plt.grid()
     plt.legend()
     plt.show()
 
 
-#TO PLOT BAR CHART-->TOP 10 COUNTRIES VS TOTAL NO. OF BRONZE MEDALS
+#TO PLOT BAR CHART->TOP 10 COUNTRIES VS TOTAL NO. OF BRONZE MEDALS
 def bar_chart3(df1):
 
     df=df1.sort_values('Tbronzemedal',ascending= False)
@@ -154,14 +154,14 @@ def bar_chart3(df1):
     plt.bar(x+0.25,totalbronze,width=.6,label='Total No. of Bronze Medals by Top 10 Countries',color='peru')
     plt.xticks(x,Countries,rotation=30)
     plt.title('Olympics Bronze Medal Analysis of Top 10 Countries',color='blue',fontsize=16)
-    plt.xlabel('Countries~~~~~>',fontsize=12,color='red')
-    plt.ylabel('No. of Bronze Medals~~~ ~~>',fontsize=12,color='red')
+    plt.xlabel('Countries ->',fontsize=12,color='red')
+    plt.ylabel('No. of Bronze Medals ->',fontsize=12,color='red')
     plt.grid()
     plt.legend()
     plt.show()
 
 
-#TO PLOT BAR CHART-->TOP 10 COUNTRIES VS TOTAL NO. OF MEDALS(IN SUMMER & WINTER)
+#TO PLOT BAR CHART->TOP 10 COUNTRIES VS TOTAL NO. OF MEDALS(IN SUMMER & WINTER)
 def dbargraph(df1):   
     
     df=df1.sort_values('TotalMedal' ,ascending=False)
@@ -174,8 +174,8 @@ def dbargraph(df1):
     plt.bar(x+0.2,Wintermedal,label="Total No. of Medals Top 10 Countries IN WINTER", width=0.4, color= 'grey')
     plt.xticks(x,Countries,rotation=20)
     plt.title('Olympic Medal Analysis by Top 10 Countries',color='navy' ,fontsize= 16)
-    plt.xlabel('Countries ~ ~ ~ ~ >',fontsize=12,color='r')
-    plt.ylabel('No. of Medals~ ~ ~~ >',fontsize=12,color='r')
+    plt.xlabel('Countries ->',fontsize=12,color='r')
+    plt.ylabel('No. of Medals ->',fontsize=12,color='r')
     plt.grid()
     plt.legend()
     plt.show()
