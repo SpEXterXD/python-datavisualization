@@ -1,4 +1,4 @@
-# class12-python
+# python-datavisualization
 Olympic Data Analysis &amp; Visualization Using Python(pandas and matplotlib)
 
 Modules Used -
